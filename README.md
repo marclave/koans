@@ -15,3 +15,10 @@ two = 2
 
 assert one == two
 ```
+
+Even more cool, there is an `assert_equal`
+```
+houseGuests = 10
+housePlates = 4
+assert_equal houseGuests, housePlates
+```

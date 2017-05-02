@@ -144,3 +144,42 @@ The reason they converted the symbols to strings was to compare the function, ot
 
 
 Symbols are immutable.
+
+### Regular Expressions
+
+
+If you want to see if a pattern is in a string, can do the following
+
+```
+assert_equal "match", "some matching content"[/match/]
+
+```
+
+If it doesnt match it returns a `nil`
+
+So if `*` can match an empty string... It appears that it would be never? Tested on whitespace and trailing characters
+
+`*` is greedy because, depending on the tokenizing, I am sure it performs a lot of backtracking and incase the input data has not been messaged or handled properly, we could match up on a lot of information.
+
+
+`select` is an enumerator, so if you want to use it on an array for example
+
+```
+numbers = [1, 2, 3, 4]
+evenNumbers = numbers.select { |number| number.even? }
+```
+
+I Enjoy the enumerator.
+
+Normal regular expression identifiers
+
+Capitalization of a shortcut negates it, can also use `^`
+
+`"\A"` is start of the string, where as `"\z"` is the end of the string
+
+
+Caret anchors tho the start of lines
+
+Dollar sign anchors to end of lines
+
+Scan is similar to findall

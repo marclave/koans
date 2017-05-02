@@ -112,3 +112,27 @@ Merging two hashes will take the hash being merged into old hash and if there ar
 When instantiating a new `Hash` you can specify a default value in `h = Hash.new("default")`
 
 The `test_default_value_is_the_same_object` caught me off guard, but makes sense
+
+
+### Strings
+
+Single and double quotes can be used for strings, need to check Stembolt coding guidelines
+
+If nesting `""` inside a string, use `''` to wrap, no need for escape characters
+
+Flexible quoting is my favourite, similar to `"{0} first thing, {1} second".format(1, 2)` in python
+
+```
+a = %(flexible quotes can handle both ' and " characters)
+```
+
+
+Can do concatenation with `+` operator.
+
+Bonus question, first glance it feels more clean, however my guess is it doesnt need to create a new string every time. It is modifying the original.
+
+Single quotes do not interpret escape chars, double quotes do.
+
+Only double strings interpolate
+
+join and split for strings and arrays are just that like python

@@ -57,3 +57,30 @@ Can do `array.first` and can also do `array.last`. Also similar to python can in
 `array[0..2]` Will take the zero index to second index `inclusive`
 
 Where as `array[0...2]` Will take the zero index to second index `exclusive`
+
+
+### Arrays (Assignments)
+
+Similar to golang, a non parrallel assignment is as follows
+```
+friends = ["John", "Smith"]
+```
+
+Something new, can do parallel assignments
+
+```
+  first_name, last_name = ["John", "Smith"]
+  assert_equal "John", first_name
+  assert_equal "Smith", last_name
+```
+
+`splat` is very cool, right now i would define it as breaking up an array without actually needing to loop over it.
+
+`double splat` is even cooler
+```
+def go(x:, y:)
+end
+
+point = { x: 100, y: 200 }
+go(**point)
+``` 

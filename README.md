@@ -183,3 +183,11 @@ Caret anchors tho the start of lines
 Dollar sign anchors to end of lines
 
 Scan is similar to findall
+
+### Methods
+
+
+Able to call a function without parenthesis, feeling uneasy want to see if this a best practice
+
+
+Function names are made into symbols as soon as they are created

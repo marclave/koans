@@ -40,3 +40,20 @@ It appears the small integers ID patterns is as follows:
 2*integer_value + 1
 
 ```
+
+### Arrays (About)
+
+Same as every other language so far for arrays..
+
+Oh this is neat, appending to an array can be done like
+
+```
+arrayName << 333
+
+```
+
+Can do `array.first` and can also do `array.last`. Also similar to python can index by negative like so `arr[-1]`
+
+`array[0..2]` Will take the zero index to second index `inclusive`
+
+Where as `array[0...2]` Will take the zero index to second index `exclusive`

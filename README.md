@@ -84,3 +84,31 @@ end
 point = { x: 100, y: 200 }
 go(**point)
 ``` 
+
+### Hashes
+
+Similar to golang except using the `=>` symbol
+
+the `#[]` will return the value if it exists, else `nil`. If we use the `#fetch` there are different options we can use.
+
+Taken from http://ruby-doc.org/core-1.9.3/Hash.html#method-i-fetch
+
+For example if we wrap with an assert raise for KeyError.
+
+```
+assert_raise(KeyError) do
+  hash.fetch(:doesnt_exist)
+end
+```
+
+For the bonus question it appeared I could not just use the literal, I am guessing for how the assert_equal handles the input?
+
+If hashes are unordered, we can still do a compare and see if the two sets are equal
+
+a hashes keys class are `Array`, same with a hashes values class
+
+Merging two hashes will take the hash being merged into old hash and if there are duplicates it will over write the old ones
+
+When instantiating a new `Hash` you can specify a default value in `h = Hash.new("default")`
+
+The `test_default_value_is_the_same_object` caught me off guard, but makes sense

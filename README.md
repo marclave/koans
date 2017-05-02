@@ -205,3 +205,19 @@ def foo(a, b: 'letterB')
 end
 
 ```
+
+
+### Constants
+
+Is it best practice to have a class of constants, then ref them from other files? Or just have a constants file. I do this in c a lot so need to check.
+
+
+top level constants are ref'd by `::` where as full path `ClassName::constant` is for the class constant
+
+
+lexicol scope has precidence over inheritance
+
+
+For the last question there is no context for `LEGS` in the lexical scope so inheritance takes the cake
+
+

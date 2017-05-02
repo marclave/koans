@@ -136,3 +136,11 @@ Single quotes do not interpret escape chars, double quotes do.
 Only double strings interpolate
 
 join and split for strings and arrays are just that like python
+
+
+### Symbols
+
+The reason they converted the symbols to strings was to compare the function, otherwise we couldn't.
+
+
+Symbols are immutable.

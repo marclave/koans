@@ -191,3 +191,17 @@ Able to call a function without parenthesis, feeling uneasy want to see if this 
 
 
 Function names are made into symbols as soon as they are created
+
+### Keyword Arguments
+
+Alongside using default values, you can use keyword arguments. the main difference from appearance is when you call the function and you want to override the keyword value you must explicitly do so, instead of implicitly like default values
+
+
+If you do not specify a value with a keyword argument that means it is required
+
+```
+def foo(a, b: 'letterB')
+  [a, b]
+end
+
+```

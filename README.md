@@ -358,3 +358,12 @@ Pretty straight forward, you can infact get do some cool things like `const_get`
 
 I prefer the former over the latter, at least from a readability standpoint
 
+
+### Message
+
+Everytime you call a method of a class, its the same as sending a message with the method name symbol :)
+
+My guess is that you can't re open __send__ but you can for send.
+
+
+

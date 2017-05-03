@@ -354,3 +354,7 @@ Modules are a way of providing methods you can use across lots of classes.
 
 Pretty straight forward, you can infact get do some cool things like `const_get` and `constants`
 
+### Class methods
+
+I prefer the former over the latter, at least from a readability standpoint
+

@@ -7,6 +7,18 @@ class AboutTriangleProject < Neo::Koan
 
   def triangle(a, b, c)
     assert_equal false, (a < 0 || b < 0 || c < 0), "Can't have negative length"
+
+    # Transitivity applies, we eval from left to right
+    # so if a == b is true and b == c is true, then a == c and 
+    # it is equilateral
+    if ((a == b) && (b == c))
+      return :equilateral
+    elsif ((a == b) || (a == c) || (b == c))
+      # we only need at least two sides to be equal
+      return :isosceles
+    else
+      return :scalene
+    end
   end
 
   def test_equilateral_triangles_have_equal_sides

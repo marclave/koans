@@ -21,7 +21,7 @@ class DiceSet
   end
 
   def generateRandomNumber(min, max)
-    rand(1..6)
+    rand(min..max)
   end
 
 end

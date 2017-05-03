@@ -339,3 +339,7 @@ I am curious as to what the advantage is to opening a class vs interfaces
 
 See `about_dice_project.rb`
 
+### Inheritance 
+
+
+Same as any other OOP Lang i've done so far

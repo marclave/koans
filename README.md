@@ -243,4 +243,6 @@ There is the `.times` which if you do `10.times do ... end` it will do that bloc
 {}
 ...
 ```
+### Triangle Project
 
+See `about_triangle_project.rb`

@@ -311,3 +311,7 @@ Explained lambdas in ruby for me http://culttt.com/2015/05/13/what-are-lambdas-i
 ### Sandwhich
 
 See `about_sandwhich_code.rb`
+
+### Scoring project
+
+See `about_scoring_project.rb`

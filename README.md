@@ -298,3 +298,11 @@ Where as if you just tried to do `File.open` you would have to do a begin..rescu
 
 On discussion, it closes the file automatically where as you have to manually close it with returning it
 
+### Blocks
+
+`block_given` will be useful
+
+blocks can change variables in outer scope
+
+
+Explained lambdas in ruby for me http://culttt.com/2015/05/13/what-are-lambdas-in-ruby/

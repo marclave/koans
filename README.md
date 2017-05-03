@@ -350,3 +350,7 @@ Same as any other OOP Lang i've done so far
 Modules are a way of providing methods you can use across lots of classes.
 
 
+### Scope
+
+Pretty straight forward, you can infact get do some cool things like `const_get` and `constants`
+

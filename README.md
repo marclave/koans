@@ -246,3 +246,24 @@ There is the `.times` which if you do `10.times do ... end` it will do that bloc
 ### Triangle Project
 
 See `about_triangle_project.rb`
+
+
+### Exceptions
+
+`rescue` allows us to handle certain exceptions
+
+if you `fail` and provide a message, that is the exception message if you `rescue` it properly.
+the flow is
+```
+begin
+...
+rescue
+...
+ensure [optional]
+```
+
+Can also raise and rescue new exceptions
+
+
+
+

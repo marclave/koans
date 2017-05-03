@@ -4,6 +4,11 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 require './triangle'
 
 class AboutTriangleProject < Neo::Koan
+
+  def triangle(a, b, c)
+    assert_equal false, (a < 0 || b < 0 || c < 0), "Can't have negative length"
+  end
+
   def test_equilateral_triangles_have_equal_sides
     assert_equal :equilateral, triangle(2, 2, 2)
     assert_equal :equilateral, triangle(10, 10, 10)

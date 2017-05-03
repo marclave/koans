@@ -221,3 +221,15 @@ lexicol scope has precidence over inheritance
 For the last question there is no context for `LEGS` in the lexical scope so inheritance takes the cake
 
 
+### Control statements
+
+Every statement returns a value, so this means we can use if statements in this way
+
+
+New keyword `unless <condition>` evaluates to `if !<condition>`
+
+`next` statements are cool, they only run the next line if a condition is true. Looks to remove the indentation of a single if statement
+
+There is the `.times` which if you do `10.times do ... end` it will do that block ten times
+
+

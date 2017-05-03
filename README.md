@@ -343,3 +343,10 @@ See `about_dice_project.rb`
 
 
 Same as any other OOP Lang i've done so far
+
+
+### Modules
+
+Modules are a way of providing methods you can use across lots of classes.
+
+

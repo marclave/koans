@@ -19,6 +19,12 @@ def triangle(a, b, c)
     raise TriangleError, "Can't have negative values'"
   elsif ((a == 0) && (b == 0) && (c == 0))
     raise TriangleError, "Can't have spatially empty triangle"
+  else
+    sides = (a + b + c)/2.0
+    h = (sides - a)*(sides - b)*(sides - c) # If this is not positive, not a triangle
+    if h <= 0
+      raise TriangleError, "Must satisfy hypothesis rule"
+    end
   end
 end
 

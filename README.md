@@ -306,3 +306,8 @@ blocks can change variables in outer scope
 
 
 Explained lambdas in ruby for me http://culttt.com/2015/05/13/what-are-lambdas-in-ruby/
+
+
+### Sandwhich
+
+See `about_sandwhich_code.rb`

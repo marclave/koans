@@ -233,3 +233,14 @@ New keyword `unless <condition>` evaluates to `if !<condition>`
 There is the `.times` which if you do `10.times do ... end` it will do that block ten times
 
 
+### About true and false
+
+`nil` is treated as false, where everything except false is treated as true: 
+```
+1
+0
+[]
+{}
+...
+```
+

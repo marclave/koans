@@ -334,3 +334,8 @@ Because initialize gets run on every instantiation, thus needing the proper argu
 
 
 I am curious as to what the advantage is to opening a class vs interfaces
+
+### Dice Project
+
+See `about_dice_project.rb`
+

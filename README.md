@@ -315,3 +315,17 @@ See `about_sandwhich_code.rb`
 ### Scoring project
 
 See `about_scoring_project.rb`
+
+
+### Classes
+
+Similar to python
+
+
+formal accessor for instance variables
+
+```
+fido.instance_variable_get("@name")
+```
+
+Because initialize gets run on every instantiation, thus needing the proper arguments if required.

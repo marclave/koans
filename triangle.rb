@@ -14,7 +14,11 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  # Satisfying these https://en.wikipedia.org/wiki/Triangle_inequality
+  if (a < 0 || b < 0 || c < 0)
+    raise TriangleError, "Can't have negative values'"
+  
+  end
 end
 
 # Error class used in part 2.  No need to change this code.

@@ -329,3 +329,8 @@ fido.instance_variable_get("@name")
 ```
 
 Because initialize gets run on every instantiation, thus needing the proper arguments if required.
+
+### Open Classes
+
+
+I am curious as to what the advantage is to opening a class vs interfaces

@@ -17,7 +17,8 @@ def triangle(a, b, c)
   # Satisfying these https://en.wikipedia.org/wiki/Triangle_inequality
   if (a < 0 || b < 0 || c < 0)
     raise TriangleError, "Can't have negative values'"
-  
+  elsif ((a == 0) && (b == 0) && (c == 0))
+    raise TriangleError, "Can't have spatially empty triangle"
   end
 end
 

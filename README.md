@@ -265,5 +265,6 @@ ensure [optional]
 Can also raise and rescue new exceptions
 
 
+### Triangle Project 2
 
-
+See `triangle.rb`

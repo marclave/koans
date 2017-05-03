@@ -13,9 +13,19 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # of the Proxy class is given in the AboutProxyObjectProject koan.
 
 class Proxy
+  attr_reader :messages
+
   def initialize(target_object)
     @object = target_object
-    # ADD MORE CODE HERE
+    @messages = []
+  end
+
+  def method_missing(method_name, *args, &block)
+    if method_name.to_s[0,3] == "foo"
+      "Foo to you too"
+    else
+      super(method_name, *args, &block)
+    end
   end
 
   # WRITE CODE HERE

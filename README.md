@@ -268,3 +268,33 @@ Can also raise and rescue new exceptions
 ### Triangle Project 2
 
 See `triangle.rb`
+
+
+### Iteration
+
+Blocks are cool for iterations, but also I feel as though less readable unless you have had ruby experience
+
+Breaks can be before `if` statement instead of nested inside if one liner
+
+Collect appears to be similar to the `map` from python
+
+Oh haha it totally is
+
+
+findall and select are, at the highest level, interchangeable
+
+`.find` finds the first occurence, based on a condition, in an array
+
+
+`inject` amalgamates all elements of iterator, can use a block to perform an operation.
+
+Ruby way of summing an array `my_array.inject(0, :+)`
+
+Bonus question
+
+My first thought is that if it failed to open it will return `nil` to file
+so then in the `assert_equal` it will fail
+Where as if you just tried to do `File.open` you would have to do a begin..rescue
+
+On discussion, it closes the file automatically where as you have to manually close it with returning it
+

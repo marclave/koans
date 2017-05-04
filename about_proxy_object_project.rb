@@ -20,9 +20,18 @@ class Proxy
     @messages = []
   end
 
+  def called?(method_name)
+    @messages.include?(method_name)
+  end
+
+  def number_of_times_called(method_name)
+    @messages.count(method_name)
+  end
+
   def method_missing(method_name, *args, &block)
-    if method_name.to_s[0,3] == "foo"
-      "Foo to you too"
+    if @object.respond_to?(method_name) then
+      @messages << method_name
+      @object.send(method_name, *args)
     else
       super(method_name, *args, &block)
     end
